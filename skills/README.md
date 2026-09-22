@@ -4,18 +4,18 @@ Personal Cursor Agent workflow: `/tonysing` entry, one-shot project preflight, a
 
 **现在就做（约 3 分钟）**
 
-1. 克隆：`git clone <本仓库 URL> ~/repos/cursor-agent-workflow`
+1. 克隆：`git clone <本仓库 URL> ~/repos/tony-agent-workflow`
 2. 三条软链（复制整段执行）：
 
 ```bash
-ln -sf ~/repos/cursor-agent-workflow/skills/tonysing ~/.cursor/skills/tonysing
-ln -sf ~/repos/cursor-agent-workflow/skills/project-preflight ~/.cursor/skills/project-preflight
-ln -sf ~/repos/cursor-agent-workflow/skills/llm-security-check ~/.cursor/skills/llm-security-check
+ln -sf ~/repos/tony-agent-workflow/skills/tonysing ~/.cursor/skills/tonysing
+ln -sf ~/repos/tony-agent-workflow/skills/project-preflight ~/.cursor/skills/project-preflight
+ln -sf ~/repos/tony-agent-workflow/skills/llm-security-check ~/.cursor/skills/llm-security-check
 ```
 
 3. 新开 Cursor 对话，输入 **`/tonysing`** — 出现提醒卡即安装成功。
 
-不想软链？`cp -R ~/repos/cursor-agent-workflow/skills/* ~/.cursor/skills/` 也行，但以后更新要再复制一次。
+不想软链？`cp -R ~/repos/tony-agent-workflow/skills/* ~/.cursor/skills/` 也行，但以后更新要再复制一次。
 
 ---
 
