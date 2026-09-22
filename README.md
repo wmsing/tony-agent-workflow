@@ -8,14 +8,14 @@ Personal Cursor Agent workflow: `/tonysing` entry, one-shot project preflight, a
 2. 三条软链（复制整段执行）：
 
 ```bash
-ln -sf ~/repos/tony-agent-workflow/skills/tonysing ~/.cursor/skills/tonysing
-ln -sf ~/repos/tony-agent-workflow/skills/project-preflight ~/.cursor/skills/project-preflight
-ln -sf ~/repos/tony-agent-workflow/skills/llm-security-check ~/.cursor/skills/llm-security-check
+ln -sf ~/repos/tony-agent-workflow/tonysing ~/.cursor/skills/tonysing
+ln -sf ~/repos/tony-agent-workflow/project-preflight ~/.cursor/skills/project-preflight
+ln -sf ~/repos/tony-agent-workflow/llm-security-check ~/.cursor/skills/llm-security-check
 ```
 
 3. 新开 Cursor 对话，输入 **`/tonysing`** — 出现提醒卡即安装成功。
 
-不想软链？`cp -R ~/repos/tony-agent-workflow/skills/* ~/.cursor/skills/` 也行，但以后更新要再复制一次。
+不想软链？`cp -R ~/repos/tony-agent-workflow/{tonysing,project-preflight,llm-security-check} ~/.cursor/skills/` 也行，但以后更新要再复制一次。
 
 ---
 
@@ -37,7 +37,7 @@ ln -sf ~/repos/tony-agent-workflow/skills/llm-security-check ~/.cursor/skills/ll
 
 ---
 
-**本仓三个目录**（在 `skills/` 下）
+**本仓三个目录**（仓库根）
 
 1. **tonysing** — 入口提醒卡 + 分流（需你主动 `/tonysing`）
 2. **project-preflight** — 一次：`.gitignore`、`.cursorignore`、极简规则、跑通最小测试
@@ -55,6 +55,6 @@ ln -sf ~/repos/tony-agent-workflow/skills/llm-security-check ~/.cursor/skills/ll
 /tonysing → 新项目？→ project-preflight →（可选）llm-security-check
 ```
 
-目录树：`skills/tonysing/`、`skills/project-preflight/`、`skills/llm-security-check/`（含 `scripts/check.sh`、`templates/`）。
+目录树：`tonysing/`、`project-preflight/`、`llm-security-check/`（含 `scripts/check.sh`、`templates/`）。
 
 个人工作流快照；fork 后按需改外部 skill 列表即可。
