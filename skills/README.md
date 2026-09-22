@@ -4,7 +4,7 @@ Personal Cursor Agent workflow: `/tonysing` entry, one-shot project preflight, a
 
 **现在就做（约 3 分钟）**
 
-1. 克隆：`git clone <本仓库 URL> ~/repos/tony-agent-workflow`
+1. 克隆：`git clone https://github.com/wmsing/tony-agent-workflow.git ~/repos/tony-agent-workflow`
 2. 三条软链（复制整段执行）：
 
 ```bash
@@ -57,4 +57,4 @@ ln -sf ~/repos/tony-agent-workflow/skills/llm-security-check ~/.cursor/skills/ll
 
 目录树：`tonysing/`、`project-preflight/`、`llm-security-check/`（含 `scripts/check.sh`、`templates/`）。
 
-个人工作流快照；fork 后改 `<本仓库 URL>` 与外部 skill 列表即可。
+个人工作流快照；fork 后改 `https://github.com/wmsing/tony-agent-workflow.git` 与外部 skill 列表即可。
