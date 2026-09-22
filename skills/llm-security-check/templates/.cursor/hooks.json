@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeReadFile": [
+      {
+        "command": ".cursor/hooks/block-secret-reads.sh",
+        "failClosed": true
+      }
+    ]
+  }
+}
